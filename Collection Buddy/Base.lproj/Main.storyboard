@@ -23,24 +23,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tbo-Z5-fuH">
-                                <rect key="frame" x="16" y="481" width="343" height="50"/>
+                                <rect key="frame" x="16" y="250" width="343" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="MeU-3J-QUi"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cr7-XV-aRI">
-                                <rect key="frame" x="16" y="539" width="343" height="50"/>
+                                <rect key="frame" x="16" y="308" width="343" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flV-p2-fxR">
-                                <rect key="frame" x="16" y="597" width="343" height="50"/>
+                                <rect key="frame" x="16" y="366" width="343" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.77021455350529511" blue="0.29671152422980951" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,9 +56,9 @@
                             <constraint firstItem="Cr7-XV-aRI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="4Dr-b1-Ec8"/>
                             <constraint firstItem="Tbo-Z5-fuH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6PV-Le-E0s"/>
                             <constraint firstItem="Tbo-Z5-fuH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="As0-77-Mw1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="flV-p2-fxR" secondAttribute="bottom" constant="251" id="F0V-E9-x1g"/>
                             <constraint firstItem="Cr7-XV-aRI" firstAttribute="height" secondItem="Tbo-Z5-fuH" secondAttribute="height" id="Fic-XF-HjH"/>
                             <constraint firstItem="flV-p2-fxR" firstAttribute="top" secondItem="Cr7-XV-aRI" secondAttribute="bottom" constant="8" id="Ico-nT-btd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="flV-p2-fxR" secondAttribute="bottom" constant="20" id="TQP-FZ-yfv"/>
                             <constraint firstItem="flV-p2-fxR" firstAttribute="height" secondItem="Tbo-Z5-fuH" secondAttribute="height" id="b0b-ub-Wjb"/>
                             <constraint firstItem="Cr7-XV-aRI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="imH-zh-Obs"/>
                             <constraint firstItem="Tbo-Z5-fuH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="w06-jV-SEb"/>
@@ -66,9 +66,15 @@
                             <constraint firstItem="flV-p2-fxR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="z8j-JI-XW9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnLoginRegister" destination="flV-p2-fxR" id="tY6-zB-NIE"/>
+                        <outlet property="emailAddress" destination="Tbo-Z5-fuH" id="0yt-w8-uME"/>
+                        <outlet property="password" destination="Cr7-XV-aRI" id="xmh-2e-r1v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-319" y="83"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="D4D-KS-cz0">
