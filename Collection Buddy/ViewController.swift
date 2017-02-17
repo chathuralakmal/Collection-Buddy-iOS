@@ -21,25 +21,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        registeredUser = UserDefaults.standard.bool(forKey: "registeredUser")
+        //registeredUser = UserDefaults.standard.bool(forKey: "registeredUser")
+        registeredUser = true
         
-        let user: FIRUser = (FIRAuth.auth()?.currentUser)!;
-        
-        if((user.email) != nil){
-            
-            let user: FIRUser = (FIRAuth.auth()?.currentUser)!;
-            print(user.email ?? "No User");
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "MainView") as! MainViewController
-            self.present(newViewController, animated: true, completion: nil)
-            
+        if(registeredUser){
+            self.btnLoginRegister.setTitle("Login", for: UIControlState.normal)
         }else{
-            if(registeredUser){
-                self.btnLoginRegister.setTitle("Login", for: UIControlState.normal)
-            }else{
-                self.btnLoginRegister.setTitle("Register", for: UIControlState.normal)
-            }
+            self.btnLoginRegister.setTitle("Register", for: UIControlState.normal)
         }
+        
         
     }
 

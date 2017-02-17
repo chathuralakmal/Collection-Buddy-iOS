@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Collection_Buddy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" id="BYZ-38-t0r" customClass="ViewController" customModule="Collection_Buddy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -98,14 +98,14 @@
                                     <action selector="pressCoinBtn:" destination="o7O-TO-FfG" eventType="touchUpInside" id="G7t-1w-1U5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total : 200/=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxo-Oz-LIt">
-                                <rect key="frame" x="16" y="626" width="343" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxo-Oz-LIt">
+                                <rect key="frame" x="16" y="659" width="343" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Contribution : 50/=" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-9o-wYo">
-                                <rect key="frame" x="16" y="585" width="343" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIf-9o-wYo">
+                                <rect key="frame" x="16" y="618" width="343" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="cYN-ek-xxF"/>
                                 </constraints>
@@ -113,23 +113,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PQ-SV-zeh">
+                                <rect key="frame" x="295" y="20" width="64" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IOW-10-ugc"/>
+                                    <constraint firstAttribute="width" constant="64" id="ztO-Lt-okc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="btnLogout:" destination="o7O-TO-FfG" eventType="touchUpInside" id="YCE-11-Jwe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NIf-9o-wYo" firstAttribute="trailing" secondItem="ChM-ey-mSS" secondAttribute="trailingMargin" id="2Wj-QZ-dBP"/>
                             <constraint firstItem="r6R-X4-7Ch" firstAttribute="leading" secondItem="ChM-ey-mSS" secondAttribute="leadingMargin" constant="58" id="6Ag-Wi-rO5"/>
                             <constraint firstItem="r6R-X4-7Ch" firstAttribute="centerX" secondItem="ChM-ey-mSS" secondAttribute="centerX" id="BG2-Of-KMz"/>
+                            <constraint firstItem="4PQ-SV-zeh" firstAttribute="trailing" secondItem="ChM-ey-mSS" secondAttribute="trailingMargin" id="DyR-20-HYt"/>
                             <constraint firstItem="Mxo-Oz-LIt" firstAttribute="trailing" secondItem="ChM-ey-mSS" secondAttribute="trailingMargin" id="G6O-jA-r3m"/>
                             <constraint firstItem="Mxo-Oz-LIt" firstAttribute="top" secondItem="NIf-9o-wYo" secondAttribute="bottom" constant="8" id="LDf-1H-MVq"/>
                             <constraint firstItem="r6R-X4-7Ch" firstAttribute="centerY" secondItem="ChM-ey-mSS" secondAttribute="centerY" id="flj-jI-HV8"/>
                             <constraint firstItem="h1e-Ip-GOw" firstAttribute="top" secondItem="r6R-X4-7Ch" secondAttribute="bottom" constant="221" id="pYd-qX-Jby"/>
                             <constraint firstItem="Mxo-Oz-LIt" firstAttribute="leading" secondItem="ChM-ey-mSS" secondAttribute="leadingMargin" id="rI3-Er-6wp"/>
                             <constraint firstItem="h1e-Ip-GOw" firstAttribute="top" secondItem="Mxo-Oz-LIt" secondAttribute="bottom" constant="8" id="te2-7U-4C1"/>
+                            <constraint firstItem="4PQ-SV-zeh" firstAttribute="top" secondItem="Blb-lI-ho8" secondAttribute="bottom" id="uWN-R5-U9P"/>
                             <constraint firstItem="NIf-9o-wYo" firstAttribute="leading" secondItem="ChM-ey-mSS" secondAttribute="leadingMargin" id="vvg-kZ-ZrA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnCoin" destination="r6R-X4-7Ch" id="ycv-ih-kZy"/>
+                        <outlet property="myValue" destination="NIf-9o-wYo" id="b8A-Q7-3gA"/>
+                        <outlet property="totalValue" destination="Mxo-Oz-LIt" id="aeS-QU-NGR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4X-1o-Ovk" userLabel="First Responder" sceneMemberID="firstResponder"/>

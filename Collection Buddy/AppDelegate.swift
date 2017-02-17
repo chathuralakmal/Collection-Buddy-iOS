@@ -20,10 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FIRApp.configure()
         
-        let user: FIRUser = (FIRAuth.auth()?.currentUser)!;
-        
-        if((user.email) != nil){
-            print(user.email ?? "No User");
+        let userEmail = UserDefaults.standard.string(forKey: "userEmail")
+        if(userEmail != nil){
             self.window = UIWindow(frame: UIScreen.main.bounds)
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let initialViewController = storyboard.instantiateViewController(withIdentifier: "MainView")
