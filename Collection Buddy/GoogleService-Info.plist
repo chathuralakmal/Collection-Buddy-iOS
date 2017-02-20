@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>33369758431-lj6mt2origogd9b2bnei46btg96j8gi9.apps.googleusercontent.com</string>
+	<string>685927937385-bqfntaet69sku2686uqd6f1bs35g7sla.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.33369758431-lj6mt2origogd9b2bnei46btg96j8gi9</string>
+	<string>com.googleusercontent.apps.685927937385-bqfntaet69sku2686uqd6f1bs35g7sla</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDQ2cj67qsqrifAN1pluZ1fVqZnGszbCVU</string>
+	<string>AIzaSyCLdRjmKwJkpjjT1sjAooZGKEZJ69YBaBo</string>
 	<key>GCM_SENDER_ID</key>
-	<string>33369758431</string>
+	<string>685927937385</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.ceylonlabs.Collection-Buddy</string>
 	<key>PROJECT_ID</key>
-	<string>collection-buddy-98e3f</string>
+	<string>collection-buddy-95e51</string>
 	<key>STORAGE_BUCKET</key>
-	<string>collection-buddy-98e3f.appspot.com</string>
+	<string>collection-buddy-95e51.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:33369758431:ios:b994e53172daf3e0</string>
+	<string>1:685927937385:ios:b994e53172daf3e0</string>
 	<key>DATABASE_URL</key>
-	<string>https://collection-buddy-98e3f.firebaseio.com</string>
+	<string>https://collection-buddy-95e51.firebaseio.com</string>
 </dict>
 </plist>

@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //registeredUser = UserDefaults.standard.bool(forKey: "registeredUser")
-        registeredUser = true
+        registeredUser = UserDefaults.standard.bool(forKey: "registeredUser")
+        //registeredUser = true
         
         if(registeredUser){
             self.btnLoginRegister.setTitle("Login", for: UIControlState.normal)

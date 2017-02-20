@@ -17,7 +17,7 @@
 		04FA0ED91E5621BC006ECDC1 /* Collection_BuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0ED81E5621BC006ECDC1 /* Collection_BuddyUITests.swift */; };
 		04FA0EE71E56245A006ECDC1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA0EE61E56245A006ECDC1 /* MainViewController.swift */; };
 		04FA0EE91E562DB9006ECDC1 /* Cha-ching-sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 04FA0EE81E562DB9006ECDC1 /* Cha-ching-sound.mp3 */; };
-		04FA0EED1E563837006ECDC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04FA0EEC1E563837006ECDC1 /* GoogleService-Info.plist */; };
+		44A274FD1E5AA1B00054EC5F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44A274FC1E5AA1B00054EC5F /* GoogleService-Info.plist */; };
 		7F10566A061D945569D59E24 /* Pods_Collection_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FA7577FEB3CBEE7BE865EB9 /* Pods_Collection_Buddy.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +55,8 @@
 		04FA0EDA1E5621BC006ECDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04FA0EE61E56245A006ECDC1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04FA0EE81E562DB9006ECDC1 /* Cha-ching-sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cha-ching-sound.mp3"; sourceTree = "<group>"; };
-		04FA0EEC1E563837006ECDC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0FA7577FEB3CBEE7BE865EB9 /* Pods_Collection_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Collection_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A274FC1E5AA1B00054EC5F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91929BB501E4A6D942BECB1A /* Pods-Collection Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection Buddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Collection Buddy/Pods-Collection Buddy.debug.xcconfig"; sourceTree = "<group>"; };
 		AF556680081AF28A81715ACF /* Pods-Collection Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Collection Buddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Collection Buddy/Pods-Collection Buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,8 +120,8 @@
 				04FA0EC41E5621BC006ECDC1 /* Info.plist */,
 				04FA0EBC1E5621BC006ECDC1 /* Collection_Buddy.xcdatamodeld */,
 				04FA0EE61E56245A006ECDC1 /* MainViewController.swift */,
+				44A274FC1E5AA1B00054EC5F /* GoogleService-Info.plist */,
 				04FA0EE81E562DB9006ECDC1 /* Cha-ching-sound.mp3 */,
-				04FA0EEC1E563837006ECDC1 /* GoogleService-Info.plist */,
 			);
 			path = "Collection Buddy";
 			sourceTree = "<group>";
@@ -274,7 +274,7 @@
 			files = (
 				04FA0EC31E5621BC006ECDC1 /* LaunchScreen.storyboard in Resources */,
 				04FA0EE91E562DB9006ECDC1 /* Cha-ching-sound.mp3 in Resources */,
-				04FA0EED1E563837006ECDC1 /* GoogleService-Info.plist in Resources */,
+				44A274FD1E5AA1B00054EC5F /* GoogleService-Info.plist in Resources */,
 				04FA0EC01E5621BC006ECDC1 /* Assets.xcassets in Resources */,
 				04FA0EBB1E5621BC006ECDC1 /* Main.storyboard in Resources */,
 			);

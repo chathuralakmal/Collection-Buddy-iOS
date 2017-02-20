@@ -18,6 +18,7 @@ class MainViewController: UIViewController {
     @IBOutlet var btnCoin: UIButton!
     @IBOutlet var myValue: UILabel!
     @IBOutlet var totalValue: UILabel!
+    @IBOutlet var userName: UILabel!
     
     var coinSound:AVAudioPlayer?
  
@@ -103,6 +104,8 @@ class MainViewController: UIViewController {
     
     
     func loadData(){
+        self.userName.text = "User : \(user.email!)";
+        
         /** Caluclating My Contribution **/
         ref.child("collection").child(user.uid).observe(.childAdded, with: { (snapshot) in
             self.myValue.text = "My Contribution : \(snapshot.value(forKey: "value") ?? "0")/="
